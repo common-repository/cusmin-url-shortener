@@ -1,0 +1,116 @@
+.cusmin-url-shortener.error{
+    color: red;
+    pointer-events: none;
+}
+.cusmin-url-shortener-btn{
+    display: inline-block;
+    position: absolute;
+    margin-left: -25px;
+    cursor: pointer;
+    background-image: url(../images/cusmin-us-logo.svg);
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 12px;
+
+}
+body.cusmin-url-shortener-disable-undo .cusmin-url-shortener-btn.shortened{
+    display: none !important;
+}
+
+@-webkit-keyframes rotate {
+    from {-webkit-transform:rotate(0deg);}
+    to {  -webkit-transform:rotate(360deg);}
+}
+
+@-moz-keyframes rotate {
+    from {-moz-transform:rotate(0deg);}
+    to {  -moz-transform:rotate(360deg);}
+}
+.cusmin-url-shortener-btn.shortened{
+    background-image: url(../images/cusmin-us-logo-x.svg);
+}
+.cusmin-url-shortener-btn.loading{
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration:.3s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:linear;
+    -moz-animation-name: rotate;
+    -moz-animation-duration:.3s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-timing-function:linear;
+    background-image: url(../images/cusmin-us-logo-loader.svg);
+}
+#wp-admin-bar-cusmin-us-ab.error{
+    pointer-events: none;
+}
+#wp-admin-bar-cusmin-us-ab.error input{
+    color: red;
+}
+
+#wpadminbar .cusmin-us-ab--item{
+    background-image: url('../images/cusmin-us-logo.svg');
+    height: 25px;
+    background-size: 17px 20px;
+    background-position-y: 6px;
+    background-position-x: 6px;
+    background-repeat: no-repeat;
+}
+
+#wpadminbar .cusmin-us-ab--item a.ab-item{
+    padding-left: 20px;
+    width: auto;
+}
+#wpadminbar .cusmin-us-ab--item:hover a.ab-item{
+    background: inherit !important;
+    color: inherit !important;
+}
+#wpadminbar .ab-cusmin-input{
+    height: 18px;
+    padding: 0 5px;
+    width: 230px;
+    border: none;
+}
+#wpadminbar #wp-admin-bar-cusmin-us-ab{
+    background-color: #fff;
+    height: 100%;
+}
+#wpadminbar .cusmin-go-shorten{
+    display: inline;
+    background: #fff;
+    border-radius: 15px;
+    padding: 2px;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 4px;
+}
+#wpadminbar .cusmin-us-ab--item:hover .cusmin-go-shorten{
+    color: initial;
+}
+
+body.settings_page_cusmin-url-shortener #wpcontent{
+    background: #fff;
+}
+body.settings_page_cusmin-url-shortener .wrap .cusmin-us-logo{
+    width: 100px;
+    height: 100px;
+    background: url(../images/cusmin-us-logo.svg) no-repeat;
+    background-size: contain;
+    float: left;
+}
+body.settings_page_cusmin-url-shortener .wrap h1{
+    padding-top: 36px;
+    color: #816c64;
+    font-weight: bold;
+    padding-bottom: 60px;
+}
+body.settings_page_cusmin-url-shortener .form-table th{
+    width: 550px;
+}
+body.settings_page_cusmin-url-shortener .form-table .description {
+    display: block;
+    font-weight: normal;
+    padding-top: 8px;
+}
